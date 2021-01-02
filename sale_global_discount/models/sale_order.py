@@ -1,7 +1,9 @@
 # Copyright 2020 Tecnativa - David Vidal
 # Copyright 2020 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from functools import partial
 from odoo import _, api, exceptions, fields, models
+from odoo.tools.misc import formatLang
 
 
 class SaleOrder(models.Model):
@@ -13,6 +15,15 @@ class SaleOrder(models.Model):
         domain="[('discount_scope', '=', 'sale'), "
                "('account_id', '!=', False), '|', "
                "('company_id', '=', company_id), ('company_id', '=', False)]",
+    )
+    # HACK: Looks like UI doesn't behave well with Many2many fields and
+    # negative groups when the same field is shown. In this case, we want to
+    # show the readonly version to any not in the global discount group.
+    # TODO: Check if it's fixed in future versions
+    global_discount_ids_readonly = fields.Many2many(
+        related="global_discount_ids",
+        string="Sale Global Discounts (readonly)",
+        readonly=True,
     )
     amount_global_discount = fields.Monetary(
         string='Total Global Discounts',
@@ -51,7 +62,7 @@ class SaleOrder(models.Model):
         if not self.global_discount_ids:
             return True
         taxes_keys = {}
-        for line in self.order_line:
+        for line in self.order_line.filtered(lambda l: not l.display_type):
             if not line.tax_id:
                 raise exceptions.UserError(_(
                     "With global discounts, taxes in lines are required."
@@ -130,13 +141,26 @@ class SaleOrder(models.Model):
         discounts = self.global_discount_ids.mapped('discount')
         if not discounts:
             return
-        round_curr = self.currency_id.round
         for order in self:
+            round_curr = order.currency_id.round
+            fmt = partial(
+                formatLang, self.with_context(lang=order.partner_id.lang).env,
+                currency_obj=order.currency_id
+            )
             res = []
             for tax in order.amount_by_group:
                 tax_amount = round_curr(
                     self.get_discounted_global(tax[1], discounts.copy()))
                 tax_base = round_curr(
                     self.get_discounted_global(tax[2], discounts.copy()))
-                res.append((tax[0], tax_amount, tax_base, tax[3]))
+                res.append(
+                    (
+                        tax[0],
+                        tax_amount,
+                        tax_base,
+                        fmt(tax_amount),
+                        fmt(tax_base),
+                        len(order.amount_by_group)
+                    )
+                )
             order.amount_by_group = res
