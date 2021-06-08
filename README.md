@@ -23,6 +23,7 @@ addon | version | summary
 [partner_prospect](partner_prospect/) | 12.0.1.0.0 | Partner Prospect
 [partner_sale_pivot](partner_sale_pivot/) | 12.0.1.0.0 | Sales analysis from customer form view
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 12.0.1.1.0 | Allow portal users to see their own documents
+[pricelist_by_category_qty](pricelist_by_category_qty/) | 12.0.1.0.0 | Discount by quantities of product category
 [product_form_sale_link](product_form_sale_link/) | 12.0.1.0.0 | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 12.0.1.1.0 | Loads in every sale order line the customer code defined in the product
 [sale_automatic_workflow](sale_automatic_workflow/) | 12.0.1.1.0 | Sale Automatic Workflow
@@ -34,6 +35,7 @@ addon | version | summary
 [sale_commitment_lead_time](sale_commitment_lead_time/) | 12.0.1.0.0 | Check preparation time of sale order
 [sale_contact_type](sale_contact_type/) | 12.0.1.0.0 | Define ordering contact type
 [sale_delivery_split_date](sale_delivery_split_date/) | 12.0.1.0.1 | Sale Deliveries split by date
+[sale_delivery_state](sale_delivery_state/) | 12.0.1.0.0 | Show the delivery state on the sale order
 [sale_disable_inventory_check](sale_disable_inventory_check/) | 12.0.1.0.0 | Disable warning 'Not enough inventory' when there isn't enough product stock
 [sale_discount_display_amount](sale_discount_display_amount/) | 12.0.1.0.0 | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_double_validation](sale_double_validation/) | 12.0.1.0.1 | Double validation for Sales
@@ -45,7 +47,7 @@ addon | version | summary
 [sale_generator](sale_generator/) | 12.0.1.0.1 | Sale Generator
 [sale_global_discount](sale_global_discount/) | 12.0.1.2.0 | Sale Global Discount
 [sale_invoice_group_method](sale_invoice_group_method/) | 12.0.1.0.0 | This module allows you to combine severalSales Orders into a single invoice,if they meet the group criteria defined by the 'Invoice Group Method'
-[sale_invoice_plan](sale_invoice_plan/) | 12.0.2.0.0 | Add to sales order, ability to manage future invoice plan
+[sale_invoice_plan](sale_invoice_plan/) | 12.0.2.1.0 | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 12.0.1.0.0 | Sales Management: let the user choose the invoice policy on the order
 [sale_isolated_quotation](sale_isolated_quotation/) | 12.0.1.1.0 | Sale Isolated Quotation
 [sale_last_price_info](sale_last_price_info/) | 12.0.2.0.0 | Product Last Price Info - Sale
@@ -54,10 +56,10 @@ addon | version | summary
 [sale_milestone_profile_invoicing](sale_milestone_profile_invoicing/) | 12.0.1.0.1 | Inform on delivered and invoiced work by sale order line.
 [sale_mrp_bom](sale_mrp_bom/) | 12.0.1.0.0 | Allows define a BOM in the sales lines.
 [sale_mrp_link](sale_mrp_link/) | 12.0.1.0.1 | Show manufacturing orders generated from sales order
-[sale_order_action_invoice_create_hook](sale_order_action_invoice_create_hook/) | 12.0.1.0.0 | Add more flexibility in the grouping parameters for the creation of invoices
+[sale_order_action_invoice_create_hook](sale_order_action_invoice_create_hook/) | 12.0.1.0.1 | Add more flexibility in the grouping parameters for the creation of invoices
 [sale_order_archive](sale_order_archive/) | 12.0.1.0.0 | Archive Sale Orders
 [sale_order_digitized_signature](sale_order_digitized_signature/) | 12.0.1.0.0 | Capture customer signature on the sales order
-[sale_order_general_discount](sale_order_general_discount/) | 12.0.1.0.1 | General discount per sale order
+[sale_order_general_discount](sale_order_general_discount/) | 12.0.1.1.0 | General discount per sale order
 [sale_order_incoterm_place](sale_order_incoterm_place/) | 12.0.1.0.1 | Sale Order Incoterm Place
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 12.0.1.1.1 | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_date](sale_order_line_date/) | 12.0.1.0.0 | Adds a commitment date to each sale order line.
@@ -67,7 +69,6 @@ addon | version | summary
 [sale_order_line_sequence](sale_order_line_sequence/) | 12.0.1.0.0 | Propagates SO line sequence to invoices and stock picking.
 [sale_order_lot_generator](sale_order_lot_generator/) | 12.0.1.0.2 | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 12.0.2.0.1 | Sale Order Lot Selection
-[sale_order_min_qty](sale_order_min_qty/) | 12.0.1.0.0 | Sale order min quantity
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 12.0.1.1.0 | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 12.0.1.0.1 | Define priority on sale orders
 [sale_order_product_assortment](sale_order_product_assortment/) | 12.0.1.0.0 | Sale Order Product Assortment
@@ -77,7 +78,7 @@ addon | version | summary
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 12.0.1.1.0 | Sale product in a secondary unit
 [sale_order_tag](sale_order_tag/) | 12.0.1.0.0 | Adds Tags to Sales Orders.
 [sale_order_transmit_method](sale_order_transmit_method/) | 12.0.1.0.0 | Set transmit method (email, post, portal, ...) in sale order and propagate it to invoices
-[sale_order_type](sale_order_type/) | 12.0.1.2.1 | Sale Order Type
+[sale_order_type](sale_order_type/) | 12.0.1.2.2 | Sale Order Type
 [sale_partner_incoterm](sale_partner_incoterm/) | 12.0.1.0.0 | Set the customer preferred incoterm on each sales order
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 12.0.1.0.0 | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 12.0.1.0.0 | Base module for multiple procurement group by Sale order
@@ -89,15 +90,17 @@ addon | version | summary
 [sale_quotation_number](sale_quotation_number/) | 12.0.1.0.0 | Different sequence for sale quotations
 [sale_rental](sale_rental/) | 12.0.1.1.0 | Manage Rental of Products
 [sale_require_po_doc](sale_require_po_doc/) | 12.0.1.0.0 | Sale Orders Require PO or Sales Documentation
+[sale_restricted_qty](sale_restricted_qty/) | 12.0.2.0.0 | Sale order min quantity
 [sale_secondary_salesperson](sale_secondary_salesperson/) | 12.0.1.0.0 | Sale Secondary Salesperson
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 12.0.1.0.0 | Add shipping amounts on sale order
-[sale_start_end_dates](sale_start_end_dates/) | 12.0.1.0.0 | Adds start date and end date on sale order lines
+[sale_start_end_dates](sale_start_end_dates/) | 12.0.1.0.1 | Adds start date and end date on sale order lines
 [sale_stock_delivery_address](sale_stock_delivery_address/) | 12.0.1.0.1 | Sale Stock Delivery Address
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 12.0.1.0.1 | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 12.0.1.0.0 | Add picking note in sale and purchase order
 [sale_stock_return_request](sale_stock_return_request/) | 12.0.1.0.0 | Sale Stock Return Request
 [sale_stock_secondary_unit](sale_stock_secondary_unit/) | 12.0.1.0.0 | Get product quantities in a secondary unit
 [sale_stock_sourcing_address](sale_stock_sourcing_address/) | 12.0.1.0.0 | Sale Stock Sourcing Address
+[sale_substate](sale_substate/) | 12.0.1.0.0 | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 12.0.1.0.0 | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_triple_discount](sale_triple_discount/) | 12.0.1.1.1 | Manage triple discount on sale order lines
 [sale_validity](sale_validity/) | 12.0.1.0.0 | Set a default validity delay on quotations
