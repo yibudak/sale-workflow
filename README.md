@@ -24,7 +24,7 @@ addon | version | summary
 [partner_sale_pivot](partner_sale_pivot/) | 12.0.1.0.0 | Sales analysis from customer form view
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 12.0.1.1.0 | Allow portal users to see their own documents
 [pricelist_by_category_qty](pricelist_by_category_qty/) | 12.0.1.0.0 | Discount by quantities of product category
-[product_form_sale_link](product_form_sale_link/) | 12.0.1.0.0 | Adds a button on product forms to access Sale Lines
+[product_form_sale_link](product_form_sale_link/) | 12.0.1.1.0 | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 12.0.1.1.0 | Loads in every sale order line the customer code defined in the product
 [sale_automatic_workflow](sale_automatic_workflow/) | 12.0.1.1.0 | Sale Automatic Workflow
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 12.0.1.0.1 | Execute sale automatic workflows in queue jobs
@@ -56,13 +56,13 @@ addon | version | summary
 [sale_milestone_profile_invoicing](sale_milestone_profile_invoicing/) | 12.0.1.0.1 | Inform on delivered and invoiced work by sale order line.
 [sale_mrp_bom](sale_mrp_bom/) | 12.0.1.0.0 | Allows define a BOM in the sales lines.
 [sale_mrp_link](sale_mrp_link/) | 12.0.1.0.1 | Show manufacturing orders generated from sales order
-[sale_order_action_invoice_create_hook](sale_order_action_invoice_create_hook/) | 12.0.1.0.1 | Add more flexibility in the grouping parameters for the creation of invoices
+[sale_order_action_invoice_create_hook](sale_order_action_invoice_create_hook/) | 12.0.1.0.3 | Add more flexibility in the grouping parameters for the creation of invoices
 [sale_order_archive](sale_order_archive/) | 12.0.1.0.0 | Archive Sale Orders
 [sale_order_digitized_signature](sale_order_digitized_signature/) | 12.0.1.0.0 | Capture customer signature on the sales order
 [sale_order_general_discount](sale_order_general_discount/) | 12.0.1.1.0 | General discount per sale order
 [sale_order_incoterm_place](sale_order_incoterm_place/) | 12.0.1.0.1 | Sale Order Incoterm Place
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 12.0.1.1.1 | Control invoice order lines if their related task has been set to invoiceable
-[sale_order_line_date](sale_order_line_date/) | 12.0.1.0.0 | Adds a commitment date to each sale order line.
+[sale_order_line_date](sale_order_line_date/) | 12.0.1.1.0 | Adds a commitment date to each sale order line.
 [sale_order_line_description](sale_order_line_description/) | 12.0.1.0.0 | Sale order line description
 [sale_order_line_input](sale_order_line_input/) | 12.0.1.0.0 | Search, create or modify directly sale order lines
 [sale_order_line_price_history](sale_order_line_price_history/) | 12.0.1.1.1 | Sale order line price history
@@ -87,6 +87,7 @@ addon | version | summary
 [sale_product_returnable](sale_product_returnable/) | 12.0.1.0.2 | Get returnable products from your customers
 [sale_product_set](sale_product_set/) | 12.0.1.3.1 | Sale product set
 [sale_product_set_variant](sale_product_set_variant/) | 12.0.1.1.0 | Add variant management to sale product set.
+[sale_promotion_rule](sale_promotion_rule/) | 12.0.1.0.1 | Module to manage promotion rule on sale order
 [sale_quotation_number](sale_quotation_number/) | 12.0.1.0.0 | Different sequence for sale quotations
 [sale_rental](sale_rental/) | 12.0.1.1.0 | Manage Rental of Products
 [sale_require_po_doc](sale_require_po_doc/) | 12.0.1.0.0 | Sale Orders Require PO or Sales Documentation
