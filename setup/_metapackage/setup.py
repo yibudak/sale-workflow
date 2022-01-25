@@ -56,6 +56,7 @@ setuptools.setup(
         'odoo12-addon-sale_order_line_input',
         'odoo12-addon-sale_order_line_price_history',
         'odoo12-addon-sale_order_line_sequence',
+        'odoo12-addon-sale_order_line_serial_unique',
         'odoo12-addon-sale_order_lot_generator',
         'odoo12-addon-sale_order_lot_selection',
         'odoo12-addon-sale_order_price_recalculation',
@@ -63,6 +64,7 @@ setuptools.setup(
         'odoo12-addon-sale_order_product_assortment',
         'odoo12-addon-sale_order_product_recommendation',
         'odoo12-addon-sale_order_product_recommendation_secondary_unit',
+        'odoo12-addon-sale_order_rename',
         'odoo12-addon-sale_order_revision',
         'odoo12-addon-sale_order_secondary_unit',
         'odoo12-addon-sale_order_tag',
@@ -73,6 +75,7 @@ setuptools.setup(
         'odoo12-addon-sale_procurement_group_by_commitment_date',
         'odoo12-addon-sale_procurement_group_by_line',
         'odoo12-addon-sale_product_category_menu',
+        'odoo12-addon-sale_product_classification',
         'odoo12-addon-sale_product_multi_add',
         'odoo12-addon-sale_product_returnable',
         'odoo12-addon-sale_product_set',
@@ -81,6 +84,7 @@ setuptools.setup(
         'odoo12-addon-sale_quotation_number',
         'odoo12-addon-sale_rental',
         'odoo12-addon-sale_require_po_doc',
+        'odoo12-addon-sale_resource_booking',
         'odoo12-addon-sale_restricted_qty',
         'odoo12-addon-sale_secondary_salesperson',
         'odoo12-addon-sale_shipping_info_helper',
@@ -102,5 +106,6 @@ setuptools.setup(
     classifiers=[
         'Programming Language :: Python',
         'Framework :: Odoo',
+        'Framework :: Odoo :: 12.0',
     ]
 )

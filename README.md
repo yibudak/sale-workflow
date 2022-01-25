@@ -43,7 +43,7 @@ addon | version | maintainers | summary
 [sale_exception](sale_exception/) | 12.0.1.1.1 |  | Custom exceptions on sale order
 [sale_fixed_discount](sale_fixed_discount/) | 12.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 12.0.1.0.1 |  | Allows to force the invoice status of the sales order to Invoiced
-[sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 12.0.1.0.0 |  | Sale Force Whole Invoiceability
+[sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 12.0.1.1.0 |  | Sale Force Whole Invoiceability
 [sale_generator](sale_generator/) | 12.0.1.0.1 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Sale Generator
 [sale_global_discount](sale_global_discount/) | 12.0.1.2.0 |  | Sale Global Discount
 [sale_invoice_group_method](sale_invoice_group_method/) | 12.0.1.0.0 |  | This module allows you to combine severalSales Orders into a single invoice,if they meet the group criteria defined by the 'Invoice Group Method'
@@ -67,6 +67,7 @@ addon | version | maintainers | summary
 [sale_order_line_input](sale_order_line_input/) | 12.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_price_history](sale_order_line_price_history/) | 12.0.1.1.1 |  | Sale order line price history
 [sale_order_line_sequence](sale_order_line_sequence/) | 12.0.1.0.0 |  | Propagates SO line sequence to invoices and stock picking.
+[sale_order_line_serial_unique](sale_order_line_serial_unique/) | 12.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Restrict the usage of unique quantity of product per line if product tracking is serial
 [sale_order_lot_generator](sale_order_lot_generator/) | 12.0.1.0.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 12.0.2.0.1 |  | Sale Order Lot Selection
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 12.0.1.1.0 |  | Recalculate prices / Reset descriptions on sale order lines
@@ -74,16 +75,18 @@ addon | version | maintainers | summary
 [sale_order_product_assortment](sale_order_product_assortment/) | 12.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Sale Order Product Assortment
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 12.0.3.0.1 |  | Recommend products to sell to customer based on history
 [sale_order_product_recommendation_secondary_unit](sale_order_product_recommendation_secondary_unit/) | 12.0.2.1.0 |  | Add secondary unit to recommend products wizard
+[sale_order_rename](sale_order_rename/) | 12.0.1.0.1 |  | Allows renaming of Quotation / Sale Order
 [sale_order_revision](sale_order_revision/) | 12.0.1.0.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 12.0.1.1.0 |  | Sale product in a secondary unit
 [sale_order_tag](sale_order_tag/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds Tags to Sales Orders.
 [sale_order_transmit_method](sale_order_transmit_method/) | 12.0.1.0.0 |  | Set transmit method (email, post, portal, ...) in sale order and propagate it to invoices
-[sale_order_type](sale_order_type/) | 12.0.1.2.2 |  | Sale Order Type
+[sale_order_type](sale_order_type/) | 12.0.1.3.0 |  | Sale Order Type
 [sale_order_weight](sale_order_weight/) | 12.0.1.0.1 |  | Sale Order Weight
 [sale_partner_incoterm](sale_partner_incoterm/) | 12.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 12.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 12.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 12.0.1.0.2 |  | Shows 'Product Categories' menu item in Sales
+[sale_product_classification](sale_product_classification/) | 12.0.1.0.0 |  | Classify products regarding their sales performance
 [sale_product_multi_add](sale_product_multi_add/) | 12.0.1.1.0 |  | Sale Product Multi Add
 [sale_product_returnable](sale_product_returnable/) | 12.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Get returnable products from your customers
 [sale_product_set](sale_product_set/) | 12.0.1.3.1 |  | Sale product set
@@ -92,6 +95,7 @@ addon | version | maintainers | summary
 [sale_quotation_number](sale_quotation_number/) | 12.0.1.0.0 |  | Different sequence for sale quotations
 [sale_rental](sale_rental/) | 12.0.1.1.1 |  | Manage Rental of Products
 [sale_require_po_doc](sale_require_po_doc/) | 12.0.1.0.0 |  | Sale Orders Require PO or Sales Documentation
+[sale_resource_booking](sale_resource_booking/) | 12.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Link resource bookings with sales
 [sale_restricted_qty](sale_restricted_qty/) | 12.0.2.0.0 |  | Sale order min quantity
 [sale_secondary_salesperson](sale_secondary_salesperson/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Secondary Salesperson
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 12.0.1.0.0 |  | Add shipping amounts on sale order
@@ -108,7 +112,7 @@ addon | version | maintainers | summary
 [sale_triple_discount](sale_triple_discount/) | 12.0.1.1.1 |  | Manage triple discount on sale order lines
 [sale_validity](sale_validity/) | 12.0.1.0.0 |  | Set a default validity delay on quotations
 [sale_wishlist](sale_wishlist/) | 12.0.1.0.0 |  | Handle sale wishlist for partners
-[sales_team_security](sales_team_security/) | 12.0.2.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | New group for seeing only sales channel's documents
+[sales_team_security](sales_team_security/) | 12.0.4.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | New group for seeing only sales channel's documents
 
 [//]: # (end addons)
 
