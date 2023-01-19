@@ -114,9 +114,9 @@ class SaleOder(models.Model):
         if invoice_plan_id:
             plan = self.env['sale.invoice.plan'].browse(invoice_plan_id)
             invoices = self.env['account.invoice'].browse(inv_ids)
-            invoices.ensure_one()  # Expect 1 invoice for 1 invoice plan
-            plan._compute_new_invoice_quantity(invoices[0])
-            invoices[0].date_invoice = plan.plan_date
+            for invoice in invoices:
+                plan._compute_new_invoice_quantity(invoice)
+                invoice.date_invoice = plan.plan_date
             plan.invoice_ids += invoices
         return inv_ids
 
@@ -237,6 +237,7 @@ class SaleInvoicePlan(models.Model):
             else:
                 plan_qty = order_line.product_uom_qty * (percent/100)
                 prec = order_line.product_uom.rounding
+                plan_qty = round(plan_qty, precision_rounding=prec)
                 if float_compare(plan_qty, line.quantity, prec) == 1:
                     raise ValidationError(
                         _('Plan quantity: %s, exceed invoiceable quantity: %s'

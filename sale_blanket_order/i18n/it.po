@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-02-26 19:45+0000\n"
+"PO-Revision-Date: 2023-01-18 12:00+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -55,7 +55,7 @@ msgstr "<strong>Vostro Riferimento:</strong>"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__message_needaction
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__message_needaction
 msgid "Action Needed"
-msgstr "Azione Richiesta"
+msgstr "Azione richiesta"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_ids
@@ -67,7 +67,7 @@ msgstr "Attività"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_state
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__activity_state
 msgid "Activity State"
-msgstr "Stato dell'Attività"
+msgstr "Stato attività"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -84,7 +84,7 @@ msgstr "Un Ordine non può essere vuoto"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__message_attachment_count
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__message_attachment_count
 msgid "Attachment Count"
-msgstr "Conteggio Allegati"
+msgstr "Numero allegati"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__blanket_line_id
@@ -246,7 +246,7 @@ msgstr "Qtà Consegnata"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__delivered_uom_qty
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__delivered_uom_qty
 msgid "Delivered quantity"
-msgstr "Quantità Consegnata"
+msgstr "Quantità consegnata"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__name
@@ -329,19 +329,19 @@ msgstr "ID"
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order__message_unread
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order_line__message_unread
 msgid "If checked new messages require your attention."
-msgstr "Se contrassegnato un nuovo messaggio richiede la tua attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order__message_needaction
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order_line__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Se contrassegnato, un nuovo messaggio richiede la tua attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order__message_has_error
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order_line__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se contrassegnato, alcuni messaggi hanno un errore di consegna."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
@@ -586,7 +586,7 @@ msgstr "Prodotto"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard__sale_order_id
 msgid "Purchase Order"
-msgstr "Ordine di Acquisto"
+msgstr "Ordine di acquisto"
 
 #. module: sale_blanket_order
 #: code:addons/sale_blanket_order/models/blanket_orders.py:587
@@ -625,7 +625,7 @@ msgstr "Responsabile"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_user_id
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__activity_user_id
 msgid "Responsible User"
-msgstr "Utilizzatore Responsabile"
+msgstr "Utente responsabile"
 
 #. module: sale_blanket_order
 #: code:addons/sale_blanket_order/wizard/create_sale_orders.py:41
@@ -736,10 +736,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stato basato su attività\n"
-"In ritardo: la data fissata è già passata\n"
-"Oggi: la data dell'Attività è oggi \n"
-"Pianificato: attività Futura."
+"Stati in base alle attività\n"
+"Scaduti: la data richiesta è trascorsa\n"
+"Oggi: la data attività è oggi\n"
+"Pianificate: attività future."
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_subtotal
@@ -818,7 +818,7 @@ msgstr "Prezzo Unitario"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__product_uom
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__product_uom
 msgid "Unit of Measure"
-msgstr "Unità di Misura"
+msgstr "Unità di misura"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__message_unread
@@ -830,7 +830,7 @@ msgstr "Messaggi non letti"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__message_unread_counter
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr "Contatore Messaggi non letti"
+msgstr "Numero messaggi non letti"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__amount_untaxed
@@ -882,7 +882,7 @@ msgstr "Fornitore"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__website_message_ids
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__website_message_ids
 msgid "Website Messages"
-msgstr "Messaggi Sito Web"
+msgstr "Messaggi sito web"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,help:sale_blanket_order.field_sale_blanket_order__website_message_ids
