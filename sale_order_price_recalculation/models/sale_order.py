@@ -18,6 +18,7 @@ class SaleOrder(models.Model):
                 dict['product_tmpl_id'] = line.product_tmpl_id
             line2 = self.env['sale.order.line'].new(dict)
             # we make this to isolate changed values:
+            line2 = line2.with_context({'sale_id': line.order_id.id})
             line2.product_uom_change()
             line2._onchange_discount()
             line.write({
