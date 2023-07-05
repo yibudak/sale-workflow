@@ -16,5 +16,5 @@ class SaleOrder(models.Model):
 class SaleOrderCancelReason(models.Model):
     _name = 'sale.order.cancel.reason'
     _description = 'Sale Order Cancel Reason'
-    _order = "name"
+
     name = fields.Char('Reason', required=True, translate=True)
